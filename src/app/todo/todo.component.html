@@ -1,10 +1,11 @@
-<div class="jumbotron" style="padding:45px 0px">
-  <h4 class="text-center">To Do List App</h4>
+<div class="jumbotron" style="padding:45px 0px; color: azure; background-color: royalblue">
+  <h4 class="text-center" style="font-weight: bold; font-style: italic; font-size: larger" >To Do List App</h4>
+  <p class="text-center" style="font-style: italic">Add your tasks for today, good luck completing them! ; )</p>
 </div>
 
 <div class="input-group">
   <input type="text" class="form-control" #itemTitle>
-  <div class="input-group-addon hover-cursor" (click)="onAdd(itemTitle)">
+  <div class="input-group-addon hover-cursor" (click)="onAdd(itemTitle)" style="background-color: white">
     <i class="fa fa-plus-circle fa-2x"></i>
   </div>
 </div>

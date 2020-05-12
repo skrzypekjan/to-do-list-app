@@ -19,7 +19,7 @@ export class TodoComponent implements OnInit {
         this.toDoListArray = [];
         // tslint:disable-next-line:no-shadowed-variable
         item.forEach(element => {
-          let x = element.payload.toJSON();
+          const x = element.payload.toJSON();
           x["$key"] = element.key;
           this.toDoListArray.push(x);
         })
@@ -41,7 +41,7 @@ export class TodoComponent implements OnInit {
     this.toDoService.checkOrUnCheckTitle($key, !isChecked);
   }
 
-  onDelete($key : string){
+  onDelete($key: string){
     this.toDoService.removeTitle($key);
   }
 
